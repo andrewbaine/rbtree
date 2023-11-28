@@ -1,0 +1,3 @@
+(test
+ (name rbtree_test)
+ (libraries alcotest core rbtree))
