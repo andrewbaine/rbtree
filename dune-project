@@ -6,8 +6,6 @@
 
 (generate_opam_files true)
 
-(version 1.0.2)
-
 (source
  (github andrewbaine/rbtree))
 

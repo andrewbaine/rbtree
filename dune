@@ -1,8 +1,6 @@
 (dirs :standard \ node_modules)
 
 (rule
- (alias runtest)
- (deps
-  (alias_rec test))
+ (alias jest)
  (action
   (run npx jest)))
