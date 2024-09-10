@@ -1,4 +1,6 @@
-(lang dune 3.11)
+(lang dune 3.16)
+
+(using melange 0.1)
 
 (name rbtree)
 
@@ -7,19 +9,23 @@
 (source
  (github andrewbaine/rbtree))
 
-(authors "Andrew Baine")
+(maintainers "Andrew Baine <andrew.baine@gmail.com>")
 
-(maintainers "Andrew Baine")
+(authors "Andrew Baine <andrew.baine@gmail.com>")
 
-(license MIT)
-
-(documentation https://github.com/andrewbaine/rbtree)
+(license "MIT")
 
 (package
  (name rbtree)
+ (authors "Andrew Baine")
  (synopsis "Functional Red-Black Tree")
  (description "Functional Red-Black Tree in Ocaml")
- (depends ocaml dune core (alcotest :with-test))
- (tags
-  ("red-black" functional tree "data structures")))
- 
+ (depends
+  (melange
+   (and
+    (>= "4.0.0")
+    :with-test))
+  (melange-jest :with-test)
+  (merlin :with-dev-setup)
+  (ocaml-lsp-server :with-dev-setup)
+  (ocamlformat :with-dev-setup)))
