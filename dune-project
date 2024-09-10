@@ -21,6 +21,8 @@
  (synopsis "Functional Red-Black Tree")
  (description "Functional Red-Black Tree in Ocaml")
  (depends
+  (ocaml
+   (>= 4.14.0))
   (melange
    (>= "4.0.0"))
   (alcotest :with-test)
