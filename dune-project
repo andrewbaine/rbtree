@@ -4,6 +4,8 @@
 
 (name rbtree)
 
+(version 1.0.0)
+
 (generate_opam_files true)
 
 (source
@@ -25,6 +27,8 @@
    (and
     (>= "4.0.0")
     :with-test))
+  (alcotest :with-test)
+  (core :with-test)
   (melange-jest :with-test)
   (merlin :with-dev-setup)
   (ocaml-lsp-server :with-dev-setup)

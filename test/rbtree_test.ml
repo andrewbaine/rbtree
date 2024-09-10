@@ -3,7 +3,7 @@ module Checked_Tree = Rbtree.Make_checked (Int)
 module Tree = Rbtree.Make (Int)
 
 let test_empty () =
-  Alcotest.(check bool) "same bool" false (Tree.empty |> Tree.member 1)
+  Alcotest.(check bool) "empty tree doesnt contain 1" false (Tree.empty |> Tree.member 1)
 
 let test_insert () =
   Alcotest.(check bool)
