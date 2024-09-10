@@ -6,6 +6,8 @@
 
 (generate_opam_files true)
 
+(version 1.0.2)
+
 (source
  (github andrewbaine/rbtree))
 
@@ -22,9 +24,7 @@
  (description "Functional Red-Black Tree in Ocaml")
  (depends
   (melange
-   (and
-    (>= "4.0.0")
-    :with-test))
+   (>= "4.0.0"))
   (alcotest :with-test)
   (core :with-test)
   (melange-jest :with-test)
