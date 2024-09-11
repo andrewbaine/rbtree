@@ -1,6 +1,4 @@
-(dirs :standard __tests__)
-
 (library
  (name rbtree)
- (public_name rbtree)
+ (public_name red-black-tree)
  (modes melange native))

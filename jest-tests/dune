@@ -1,0 +1,13 @@
+(melange.emit
+ (alias emit-jest)
+ (target "__tests__")
+ (libraries rbtree melange-jest.jest)
+ (preprocess
+  (pps melange.ppx)))
+
+(rule
+ (alias jest)
+ (deps
+  (alias_rec emit-jest))
+ (action
+  (run npx jest)))

@@ -2,7 +2,7 @@
 
 (using melange 0.1)
 
-(name rbtree)
+(name red-black-tree)
 
 (generate_opam_files true)
 
@@ -16,7 +16,7 @@
 (license "MIT")
 
 (package
- (name rbtree)
+ (name red-black-tree)
  (authors "Andrew Baine")
  (synopsis "Functional Red-Black Tree")
  (description "Functional Red-Black Tree in Ocaml")

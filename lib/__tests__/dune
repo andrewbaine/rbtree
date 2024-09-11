@@ -1,6 +1,0 @@
-(melange.emit
- (target test)
- (alias test)
- (libraries rbtree melange-jest.jest)
- (preprocess
-  (pps melange.ppx)))

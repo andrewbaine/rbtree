@@ -1,6 +1,0 @@
-(dirs :standard \ node_modules)
-
-(rule
- (alias jest)
- (action
-  (run npx jest)))
